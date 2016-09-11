@@ -2,12 +2,12 @@
 %This section generate the result of 100 simulated Bernoulli trials.
 x=randi([0 1],1,100);
 figure(1);
-hist(x,[-1:2])
+hist(x,-1:2)
 xlabel('outcome')
-ylabel('frequence')
+ylabel('frequency')
 
 %%
-%This is for :
+%This is for:
 %Write a routine to count the number of successes in 5 fair Bernoulli 
 %trials. Generate a histogram for 100 samples of this counting random 
 %variable.
@@ -16,7 +16,7 @@ num=sum(x);
 figure(2);
 hist(num,-1:6);
 xlabel('number of successes in 5 trials');
-ylabel('frequence');
+ylabel('frequency');
 
 %%
 %Write a routine to count the number of trials before the first successful
@@ -32,6 +32,6 @@ end
 figure(3);
 hist(num,(min(num)-1):(max(num)+1));
 xlabel('number of trials before success');
-ylabel('frequence')
+ylabel('frequency')
 
 
