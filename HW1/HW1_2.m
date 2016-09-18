@@ -29,10 +29,6 @@ for k=[2 5 10 30 50]
     xlabel(strcat('sum(k=',num2str(k),')'));
     ylabel('num');
     hold off
-    %% Data difference 
-    % diff=sum(abs(ppd*trial_time-counts));
-    % disp('The difference is:')
-    % disp(diff);
 end
 
 
